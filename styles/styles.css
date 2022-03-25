@@ -94,11 +94,7 @@ button {
   align-items: center;
 }
 
-.navigation-user {
-  max-width: 264px;
-  margin-left: auto;
 
-}
 
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -113,6 +109,11 @@ button {
 }
 
 /* navigation-user */
+.navigation-user {
+  max-width: 264px;
+  margin-left: auto;
+}
+
 .navigation-user-link {
   font-weight: 700;
   font-size: 16px;
@@ -122,16 +123,37 @@ button {
   text-decoration: none;
   color: #ffffff;
   background-color: #756257;
-  min-width: 42px;
-  min-height: 66px;
+  width: 42px;
+  height: 66px;
+  display: block;
+  border: solid red 1px;
 }
+
+ .navigation-user-item:nth-child(1) .navigation-user-link {
+  background-image: url("../images/nav-icon-search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
+.navigation-user-item:nth-child(2) .navigation-user-link {
+ background-image: url("../images/nav-icon-favorite.svg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-color: #ffffff;
+}
+
+.navigation-user-item:nth-child(3) .navigation-user-link {
+  width: 160px;
+  height: 37px;
+}
+
 
 /* page-container */
 .page-container {
   width: 1200px;
   margin: 0 auto;
 }
-
 
 /* big-logo-and-background-img-container */
 .big-logo-container {
@@ -409,7 +431,6 @@ footer {
 }
 /* социальные сети*/
 .footer-social {
-  
   border: solid blue 2px;
 }
 
@@ -433,6 +454,29 @@ footer {
 
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
+}
+
+/* социальные сети - иконки*/
+
+.footer-social-link {
+  display: block;
+  height: 18px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.footer-social-tw {
+  background-image: url("../images/footer-icon-twitter.svg");
+}
+
+.footer-social-fb {
+  background-image: url("../images/footer-icon-facebook.svg");
+}
+
+.footer-social-youtube {
+  background-image: url("../images/footer-icon-youtube.svg");
 }
 
 /* телефон */
